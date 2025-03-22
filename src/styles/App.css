@@ -1,0 +1,22 @@
+.banner {
+  background-color: var(--color-blue);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner__sign-container {
+  position: relative;
+}
+
+.banner__graffiti {
+  position: absolute;
+  right: -13%;
+  top: 10%;
+}
+
+.container {
+  width: calc(56 * .5rem);
+}

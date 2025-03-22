@@ -1,34 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main className="container">
+      <div className="banner">
+        <div className="banner__sign-container">
+          <img className="banner__sign" src="/assets/atm_sign.png" />
+          <img className="banner__graffiti" src="/assets/graffiti.png" />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="body">
+        <div className="card-selector"></div>
+        <div className="screen">
+          <p className="screen__header">Welcome to the ATM</p>
+          <div className="screen__options-container">
+            <ul className="screen__options">
+              <li>Enter PIN</li>
+            </ul>
+          </div>
+          <span>SYSTEMS</span>
+        </div>
+        <img className="body__graffiti" src="/assets/sticker_graf.png" />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </main>
   )
 }
 
