@@ -92,6 +92,10 @@
   border-radius: .25rem;
 }
 
+.option__button--disabled {
+  cursor: not-allowed;
+}
+
 
 .option__button::before, .option__button::after {
   --border-width: 5px;

@@ -1,12 +1,23 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import { SCREENS } from '../interfaces/screens'
+import { NavigationContext } from '../components/context/Navigation'
 
 export const useNavigate = () => {
-  const [history, setHistory] = useState<SCREENS[]>([SCREENS.ROOT])
+  const [history, setHistory] = useContext(NavigationContext)
 
   const location = history.at(-1) ?? SCREENS.ROOT
   const navigateTo = (target: SCREENS) =>
-    setHistory((prev) => [...prev, target])
+    setHistory((prev) => {
+      const draft = [...prev]
+      const indexInHistory = draft.indexOf(target)
+      if (indexInHistory === -1) {
+        draft.push(target)
+      } else {
+        draft.splice(indexInHistory + 1)
+      }
+
+      return draft
+    })
 
   const navigateBack = () =>
     setHistory((prev) => {

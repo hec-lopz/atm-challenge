@@ -1,4 +1,4 @@
-import { Screen } from './components/Screen'
+import { Router } from './components/Router'
 import './styles/App.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       </div>
       <div className="atm">
         <div className="card-selector"></div>
-        <Screen />
+        <Router />
         <img className="atm__graffiti" src="/assets/sticker_graf.png" />
       </div>
     </main>

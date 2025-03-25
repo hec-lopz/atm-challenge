@@ -1,4 +1,4 @@
-import { ElementType, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 export enum SCREENS {
   HOME = 'home',
@@ -7,6 +7,8 @@ export enum SCREENS {
   BALANCE = 'balance',
   WITHDRAW = 'withdraw',
   DEPOSIT = 'deposit',
+  SUCCESS = 'success',
+  ERROR = 'error',
 }
 
 type MenuOption = {
@@ -23,7 +25,7 @@ export type MenuOptionList = [
 
 export type Menu = {
   title: string
-  content?: string
+  content?: string | ReactNode
   options?: {
     left?: MenuOptionList
     right?: MenuOptionList

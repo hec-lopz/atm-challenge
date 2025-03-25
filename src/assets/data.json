@@ -1,0 +1,20 @@
+[
+	{
+		"username": "Peter Parker",
+		"balance": 50,
+		"card_provider": "star",
+		"pin": "0000"
+	},
+	{
+		"username": "Bruce Banner",
+		"balance": 100,
+		"card_provider": "master_card",
+		"pin": "1234"
+	},
+	{
+		"username": "Tony Stark",
+		"balance": 10000,
+		"card_provider": "visa",
+		"pin": "1234"
+	}
+]
