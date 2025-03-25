@@ -1,0 +1,47 @@
+.card-selector {
+  width: 100%;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.card-selector__item {
+  height: 20px;
+  opacity: .2;
+}
+
+
+.card-selector__item--active {opacity: 1;}
+
+#star{
+  width: 28px;
+  background: url('./assets/creditcard_sprite.png') 0 0;
+}
+
+#pulse {
+  width: 42px;
+  background: url('./assets/creditcard_sprite.png') -38px 0;
+}
+
+#maestro {
+  width: 27px;
+  background: url('./assets/creditcard_sprite.png') -94px 0;
+}
+
+#master-card {
+width: 27px;
+  background: url('./assets/creditcard_sprite.png') -133px 0;
+}
+
+#plus {
+  width: 30px;
+  background: url('./assets/creditcard_sprite.png') -170px 0;
+}
+
+
+#visa {
+  width: 24px;
+  background: url('./assets/creditcard_sprite.png') -212px 0;
+}

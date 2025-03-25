@@ -1,3 +1,4 @@
+import { CardSelector } from './components/CardSelector'
 import { Router } from './components/Router'
 import './styles/App.css'
 
@@ -11,7 +12,7 @@ function App() {
         </div>
       </div>
       <div className="atm">
-        <div className="card-selector"></div>
+        <CardSelector />
         <Router />
         <img className="atm__graffiti" src="./assets/sticker_graf.png" />
       </div>

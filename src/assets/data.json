@@ -8,7 +8,7 @@
 	{
 		"username": "Bruce Banner",
 		"balance": 100,
-		"card_provider": "master_card",
+		"card_provider": "master-card",
 		"pin": "1234"
 	},
 	{

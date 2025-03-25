@@ -33,7 +33,7 @@
   background-color: var(--color-gray-light);
   border-top: .5rem solid var(--color-gray-shadow);
   height: calc(80 * .5rem);
-  padding: 1rem 5rem;
+  padding: .5rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
