@@ -46,6 +46,10 @@ To challenge myself and demonstrate a deeper understanding of React, I avoided u
 
 ## **🖥️ Demo**
 
+You can run this project locally or check the live demo:
+
+- [Live demo](https://hec-lopz.github.io/atm-challenge/)
+
 To access the home screen, enter one of the following PINs:
 
 | Name         | Pin  |
