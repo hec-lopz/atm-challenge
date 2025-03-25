@@ -1,6 +1,11 @@
-import { useContext } from 'react'
+import { createContext, Dispatch, SetStateAction, useContext } from 'react'
 import { SCREENS } from '../interfaces/screens'
-import { NavigationContext } from '../components/context/Navigation'
+
+export const navigationDefaultValue = [SCREENS.ROOT]
+
+export const NavigationContext = createContext<
+  [SCREENS[], Dispatch<SetStateAction<SCREENS[]>>]
+>([navigationDefaultValue, () => {}])
 
 export const useNavigate = () => {
   const [history, setHistory] = useContext(NavigationContext)

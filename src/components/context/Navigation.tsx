@@ -1,20 +1,11 @@
+import { ReactNode, useState } from 'react'
 import {
-  createContext,
-  Dispatch,
-  ReactNode,
-  SetStateAction,
-  useState,
-} from 'react'
-import { SCREENS } from '../../interfaces/screens'
-
-const defaultValue = [SCREENS.ROOT]
-
-export const NavigationContext = createContext<
-  [SCREENS[], Dispatch<SetStateAction<SCREENS[]>>]
->([defaultValue, () => {}])
+  NavigationContext,
+  navigationDefaultValue,
+} from '../../hooks/useNavigate'
 
 export const Navigation = ({ children }: { children: ReactNode }) => {
-  const navigationState = useState(defaultValue)
+  const navigationState = useState(navigationDefaultValue)
   return (
     <NavigationContext value={navigationState}>{children}</NavigationContext>
   )

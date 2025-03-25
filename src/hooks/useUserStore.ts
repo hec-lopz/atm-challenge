@@ -1,11 +1,25 @@
-import { useContext, useEffect } from 'react'
+import { createContext, Dispatch, SetStateAction, useContext } from 'react'
 import {
   authenticate,
   deposit,
   signOut,
   withdraw,
 } from '../services/transactions'
-import { StoreContext } from '../components/context/Store'
+import { UserStore } from '../interfaces/user'
+
+export const userStoreDefaultVaue = {
+  data: {
+    username: '',
+    balance: 0,
+    cardProvider: '',
+  },
+  isLoading: false,
+  isError: false,
+}
+
+export const StoreContext = createContext<
+  [UserStore, Dispatch<SetStateAction<UserStore>>]
+>([userStoreDefaultVaue, () => {}])
 
 export const useUserStore = () => {
   const [store, setStore] = useContext(StoreContext)
