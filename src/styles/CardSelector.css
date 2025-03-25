@@ -17,31 +17,31 @@
 
 #star{
   width: 28px;
-  background: url('./assets/creditcard_sprite.png') 0 0;
+  background: url('./creditcard_sprite.png') 0 0;
 }
 
 #pulse {
   width: 42px;
-  background: url('./assets/creditcard_sprite.png') -38px 0;
+  background: url('./creditcard_sprite.png') -38px 0;
 }
 
 #maestro {
   width: 27px;
-  background: url('./assets/creditcard_sprite.png') -94px 0;
+  background: url('./creditcard_sprite.png') -94px 0;
 }
 
 #master-card {
 width: 27px;
-  background: url('./assets/creditcard_sprite.png') -133px 0;
+  background: url('./creditcard_sprite.png') -133px 0;
 }
 
 #plus {
   width: 30px;
-  background: url('./assets/creditcard_sprite.png') -170px 0;
+  background: url('./creditcard_sprite.png') -170px 0;
 }
 
 
 #visa {
   width: 24px;
-  background: url('./assets/creditcard_sprite.png') -212px 0;
+  background: url('./creditcard_sprite.png') -212px 0;
 }
