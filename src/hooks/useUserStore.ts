@@ -27,7 +27,7 @@ export const useUserStore = () => {
   const logout = async () => {
     setStore((prev) => ({ ...prev, isLoading: true, isError: false }))
     await signOut()
-    setStore((prev) => ({ ...prev, isLoading: false }))
+    setStore(userStoreDefaultVaue)
   }
   const login = async (pin: string) => {
     setStore((prev) => ({ ...prev, isLoading: true, isError: false }))

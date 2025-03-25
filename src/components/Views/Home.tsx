@@ -6,6 +6,9 @@ import { Screen } from '../Screen'
 export const Home = () => {
   const { data: user, actions } = useUserStore()
   const navigate = useNavigate()
+  const handleReEnterPin = () => {
+    actions.logout().then(() => navigate.to(SCREENS.ENTER_PIN))
+  }
   const handleExit = () => {
     actions.logout().then(() => navigate.to(SCREENS.ROOT))
   }
@@ -26,7 +29,7 @@ export const Home = () => {
       rightOptions={[
         {
           label: 'Re-Enter PIN',
-          action: () => navigate.to(SCREENS.ENTER_PIN),
+          action: handleReEnterPin,
         },
         {
           label: 'Balance',
