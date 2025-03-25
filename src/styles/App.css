@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   margin: auto;
+  height: 100%;
+  padding-top: 1rem;
 }
 
 .banner {
@@ -29,11 +32,12 @@
   width: 90%;
   background-color: var(--color-gray-light);
   border-top: .5rem solid var(--color-gray-shadow);
-  height: calc(100 * .5rem);
+  height: calc(80 * .5rem);
   padding: 1rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .atm__graffiti {
