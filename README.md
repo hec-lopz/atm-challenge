@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# **ATM Machine Challenge**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A ReactJS application built with TypeScript using the Vite starter template:
 
-Currently, two official plugins are available:
+```bash
+pnpm create vite atm-challenge --template react-ts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## **🚀 Installation**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone https://github.com/hec-lopz/atm-challenge.git
+
 ```
+
+Navigate to the project directory and install dependencies:
+
+```bash
+cd atm-challenge
+pnpm install # or npm install
+
+```
+
+Start the development server:
+
+```bash
+pnpm dev # or npm run dev
+
+```
+
+## **📖 Project Overview**
+
+This project is an **ATM interface simulation**
+
+### **🔹 Key Features:**
+
+- **Custom routing system** (no external libraries)
+- **State management** inspired by Zustand
+- **Mock API requests** for ATM transactions
+- **CRUD operations** (Read, Update, Delete)
+
+To challenge myself and demonstrate a deeper understanding of React, I avoided using external libraries where possible, implementing custom solutions instead.
+
+## **🖥️ Demo**
+
+To access the home screen, enter one of the following PINs:
+
+| Name         | Pin  |
+| ------------ | ---- |
+| Peter Parker | 0000 |
+| Bruce Banner | 1234 |
+| Tony Stark   | 4321 |
+
+![ATM Screenshot Intro](/screenshot1)
+![ATM Screenshot Home](/screenshot2)
